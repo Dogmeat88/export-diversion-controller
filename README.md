@@ -1,22 +1,29 @@
-# HRV controller
-This is a smart replacement for an HRV/ERV controller
+# AC Export Diversion controller
+This device allows the controlled energy diversion into a resistive load.
+Its purpose is to utilise otherwise exported solar energy by dumping it into a hot water cylinder.
+Because the amount of exported solar energy varies, the amount of being diverted into the HWC must also vary.
 
-The software will automatically switch between heating and cooling mode depending on the attic and house temperature comparison.
-
-Setting the mode to 'off' will override the automatic mode setting. 
 
 ## Hardware
-* [ESP32-WROOM-32D Microcontroller](https://s.click.aliexpress.com/e/_DnBZ0rd)
-* [DS18B20 Temperature Sensor x2](https://s.click.aliexpress.com/e/_DlF2SIx)
-* [RobotDyn Dimmer/Motor Controller module](https://s.click.aliexpress.com/e/_DlDin6n)
-* [Mains to 5v DC adapter](https://s.click.aliexpress.com/e/_DBtTMj5)
+* [ESP32-C3 SuperMini Dev Board](https://s.click.aliexpress.com/e/_DEkIgvN)
+* [MCP4725 I2C DAC](https://s.click.aliexpress.com/e/_Dd37UpH)
+* [30A Relay Module 5V](https://s.click.aliexpress.com/e/_DFhWROL)
+* [3.3V/5V Logic Level Converter](https://s.click.aliexpress.com/e/_Dkny60b)
+* [SCR Regulator 120A](https://s.click.aliexpress.com/e/_DmAf18X)
+* [SSR Heat Sink DIN Rail Mount](https://s.click.aliexpress.com/e/_DnF24jp)
 
-## Display
-![](assets/hrv-display.png)
+##Installation
+Install [ESPHome](https://esphome.io/guides/installing_esphome.html)
 
-## Circuit Diagram
-![](assets/hrv-controller-circuit.png)
+Create a ```secrets.yaml``` file and add your Wi-Fi credentials in this format
 
-## Assembly
-![](assets/hrv-controller-assembly.png)
+wifi_ssid: '<SSID>'
+wifi_password: '<PASSWORD>'
+
+
+Then run: ```esphome run diversion.yaml```
+
+## PCB
+![](assets/diversion-pcb.png)
+
 
