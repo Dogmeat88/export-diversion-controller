@@ -2,7 +2,12 @@
 This device allows the controlled energy diversion into a resistive load.
 Its purpose is to utilise otherwise exported solar energy by dumping it into a hot water cylinder.
 Because the amount of exported solar energy varies, the amount of being diverted into the HWC must also vary.
+---
+==WARNING==
 
+This project deals with high voltage, high current AC electricity. Do not attempt to replicate unless you know what you are doing.
+
+---
 
 ##Hardware
 * [ESP32-C3 SuperMini Dev Board](https://s.click.aliexpress.com/e/_DEkIgvN)
