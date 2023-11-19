@@ -30,10 +30,18 @@ Then run: ```esphome run diversion.yaml```
 ##Wiring Diagram
 ![](assets/diversion-wiring-diagram.png)
 ##PCB
-![](assets/diversion-pcb.png)
+[Gerber Files](assets/diversion-gerber.zip)
 
+![](assets/diversion-pcb.png)
+##Implemented
+![](assets/diversion-implemented.png)
 
 ##Example Home Assistant Automation
+This example automation which continually adjusts the power going to the hot water cylinder element (fan.hwc_controller) based on the amount of power being exported (sensor.emoncms_grid_consumption)
+
+The target export power has been set to 100W as an attempt to avoid overshot and inadvertent power import under certain weather conditions (i.e. frequent, intermittent cloud coverage)
+
+It also increases/decreases in varying increments based on the amount of import/exported power
 ```
 alias: Map Export to Diversion
 description: ""
