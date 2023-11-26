@@ -1,4 +1,4 @@
-#AC Export Diversion controller
+# AC Export Diversion controller
 This device allows the controlled energy diversion into a resistive load.
 Its purpose is to utilise otherwise exported solar energy by dumping it into a hot water cylinder.
 Because the amount of exported solar energy varies, the amount of being diverted into the HWC must also vary.
@@ -9,7 +9,7 @@ This project deals with high voltage, high current AC electricity. Do not attemp
 
 ---
 
-##Hardware
+## Hardware
 * [ESP32-C3 SuperMini Dev Board](https://s.click.aliexpress.com/e/_DEkIgvN)
 * [MCP4725 I2C DAC](https://s.click.aliexpress.com/e/_Dd37UpH)
 * [30A Relay Module 5V](https://s.click.aliexpress.com/e/_DFhWROL)
@@ -17,7 +17,7 @@ This project deals with high voltage, high current AC electricity. Do not attemp
 * [SCR Regulator 120A](https://s.click.aliexpress.com/e/_DmAf18X)
 * [SSR Heat Sink DIN Rail Mount](https://s.click.aliexpress.com/e/_DnF24jp)
 
-##Installation
+## Installation
 Install [ESPHome](https://esphome.io/guides/installing_esphome.html)
 
 Create a ```secrets.yaml``` file and add your Wi-Fi credentials in this format
@@ -27,16 +27,16 @@ wifi_password: '<PASSWORD>'
 
 
 Then run: ```esphome run diversion.yaml```
-##Wiring Diagram
+## Wiring Diagram
 ![](assets/diversion-wiring-diagram.png)
-##PCB
+## PCB
 [Gerber Files](assets/diversion-gerber.zip)
 
 ![](assets/diversion-pcb.png)
-##Implemented
+## Implemented
 ![](assets/diversion-implemented.png)
 
-##Example Home Assistant Automation
+## Example Home Assistant Automation
 This example automation which continually adjusts the power going to the hot water cylinder element (fan.hwc_controller) based on the amount of power being exported (sensor.emoncms_grid_consumption)
 
 The target export power has been set to 100W as an attempt to avoid overshot and inadvertent power import under certain weather conditions (i.e. frequent, intermittent cloud coverage)
