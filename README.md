@@ -17,6 +17,11 @@ This project deals with high voltage, high current AC electricity. Do not attemp
 * [SCR Regulator 120A](https://s.click.aliexpress.com/e/_DmAf18X)
 * [SSR Heat Sink DIN Rail Mount](https://s.click.aliexpress.com/e/_DnF24jp)
 
+## Additional hardware
+A way to measure the amount of exported energy is required and must be integrated ito Home Assistant.
+I use one of these, and would recommend as it runs EspHome, has plenty of sensor inputs and has been very reliable.
+* [Expandable 6 Channel ESP32 Energy Meter](https://circuitsetup.us/product/expandable-6-channel-esp32-energy-meter/?v=8e3eb2c69a18)
+
 ## Installation
 Install [ESPHome](https://esphome.io/guides/installing_esphome.html)
 
