@@ -3,11 +3,17 @@ This device allows the controlled energy diversion into a resistive load.
 Its purpose is to utilise otherwise exported solar energy by dumping it into a hot water cylinder.
 Because the amount of exported solar energy varies, the amount of being diverted into the HWC must also vary.
 ---
-==WARNING==
+== WARNING ==
 
 This project deals with high voltage, high current AC electricity. Do not attempt to replicate unless you know what you are doing.
 
 ---
+
+## Alternative
+There is an off the shelf device that seem to do the same thing as this project. 
+
+I have not tested this device, it might be a good alternative for some people: [3kw Solar Immersion Controller Power Distributor](https://s.click.aliexpress.com/e/_De9Gy9j)
+
 
 ## Hardware
 * [ESP32-C3 SuperMini Dev Board](https://s.click.aliexpress.com/e/_DEkIgvN)
