@@ -14,6 +14,7 @@ There is an off the shelf device that seem to do the same thing as this project.
 
 I have not tested this device, it might be a good alternative for some people: [3kw Solar Immersion Controller Power Distributor](https://s.click.aliexpress.com/e/_De9Gy9j)
 
+**Disclosure:** This README contains affiliate links. I may earn a commission from qualifying purchases. #Ad
 
 ## Hardware
 * [ESP32-C3 SuperMini Dev Board](https://s.click.aliexpress.com/e/_DEkIgvN)
